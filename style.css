@@ -111,7 +111,7 @@ section {
 }
 
 section button,
-.image-download-btn button {
+.level-compressor button {
     border: none;
     outline: none;
     cursor: pointer;
@@ -127,13 +127,13 @@ section button,
 }
 
 section button:hover,
-.image-download-btn button:hover {
+.level-compressor button:hover {
     color: white;
     box-shadow: 0 0 5px #927dfc, 0 0 15px #927dfc;
 }
 
 section button::after,
-.image-download-btn button::after {
+.level-compressor button::after {
     content: "";
     position: absolute;
     top: 0;
@@ -147,12 +147,18 @@ section button::after,
 }
 
 section button:hover::after,
-.image-download-btn button:hover::after {
+.level-compressor button:hover::after {
     clip-path: circle(100% at 50% 50%);
 }
 
-.image-download-btn button {
-    display: none;
+.level-compressor{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.level-compressor-show{
+    max-height: 100%;
 }
 
 .image-compressor-box {
@@ -208,10 +214,6 @@ section button:hover::after,
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-}
-
-.image-compressor-box .image-compressor-content .content-2 img{
-       
 }
 
 .image-compressor-box .close-image-compressor i {
