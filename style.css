@@ -73,7 +73,7 @@ nav .nav-right button i {
     margin-top: 20px;
 }
 
-.profile-history .history-content .history-item{
+.profile-history .history-content .history-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,13 +151,14 @@ section button:hover::after,
     clip-path: circle(100% at 50% 50%);
 }
 
-.level-compressor{
+.level-compressor {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s;
 }
 
-.level-compressor-show{
+.level-compressor-show,
+.level-compressor-show-2 {
     max-height: 100%;
 }
 
@@ -177,7 +178,8 @@ section button:hover::after,
     transition: all 0.6s ease-in-out;
 }
 
-.image-compressor-box-show {
+.image-compressor-box-show,
+.image-compressor-box-show-2 {
     opacity: 1;
     pointer-events: visible;
 }
@@ -200,16 +202,16 @@ section button:hover::after,
     border-radius: 5px;
 }
 
-.image-compressor-box .image-compressor-content .content-2.active p {
+.image-compressor-box .image-compressor-content .content-2.active p{
     display: none;
 }
 
 
-.image-compressor-box .image-compressor-content .content-2 p {
+.image-compressor-box .image-compressor-content .content-2 p{
     display: block;
 }
 
-.image-compressor-box .image-compressor-content .content-2.active img {
+.image-compressor-box .image-compressor-content .content-2.active img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -232,13 +234,14 @@ section button:hover::after,
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #927dfcaf;
+    background-color: #927dfc;
     opacity: 0;
     z-index: -1;
     transition: all 0.6s ease-in-out;
 }
 
-.image-compressor-overlay-show {
+.image-compressor-overlay-show,
+.image-compressor-overlay-show-2 {
     opacity: 1;
     z-index: 3;
 }

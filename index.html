@@ -86,7 +86,7 @@
 
         <div class="btns d-flex justify-content-between align-items-center w-100">
             <button class="py-2 px-3 rounded-2" id="image-compressor-btn">Image Compressor</button>
-            <button class="py-2 px-3 rounded-2">Coming Soon</button>
+            <button class="py-2 px-3 rounded-2" id="image-compressor-btn-2">Image Resizer</button>
         </div>
 
     </section>
@@ -111,17 +111,59 @@
         </div>
 
         <div class="level-compressor d-flex flex-column gap-3">
-            <select id="select-menu">
-                <option value="Low">Low</option>
-                <option value="Medium" selected>Medium</option>
-                <option value="High">High</option>
-            </select>
             <button class="px-3 py-2 rounded-3" id="dowload-image">Download Image</button>
         </div>
 
     </div>
 
     <div class="image-compressor-overlay"></div>
+
+    <!-- Second -->
+    <div class="image-compressor-box image-compressor-box-2 position-absolute top-50 start-50 translate-middle">
+        <div class="close-image-compressor close-image-compressor-2 position-absolute top-0 end-0">
+            <i class="fas fa-x"></i>
+        </div>
+        <div class="image-compressor-heading image-compressor-heading-2">
+            <h3 class="m-0 text-uppercase fw-bold">Image Resizer</h3>
+        </div>
+        <div class="image-compressor image-compressor-2">
+            <div class="image-compressor-content image-compressor-content-2 text-center d-flex flex-column gap-2 align-items-center">
+                <input type="file" id="input-box-2" accept="image/*" hidden>
+
+                <div
+                    class="content-2 content-3 d-flex align-items-center flex-column justify-content-center w-100 h-100">
+                    <img src="./images/upload-icon.svg" alt="...">
+                    <p class="m-0 fw-medium">Upload From Computer</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="level-compressor level-compressor-2 d-flex flex-column gap-3">
+            <div class="input-content">
+
+                <div class="input-group">
+                    <label for="widthEle">Width</label>
+                    <input type="number" id="widthEle">
+                </div>
+                
+                <div class="input-group">
+                    <label for="heightEle">Height</label>
+                    <input type="number" id="heightEle">
+                </div>
+
+            </div>
+            <div class="checkBox">
+                <input type="checkbox" id="checkedEle" checked>
+                <label for="checkedEle">Locked Aspect Ratio</label>
+            </div>
+            <button class="px-3 py-2 rounded-3" id="dowload-image-2">Download Image</button>
+        </div>
+
+    </div>
+
+    <div class="image-compressor-overlay image-compressor-overlay-2"></div>
+    <!-- Second -->
 
 </body>
 
