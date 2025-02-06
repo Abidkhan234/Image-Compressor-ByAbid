@@ -31,7 +31,7 @@ nav .nav-right button i {
     max-width: 400px;
     height: 300px;
     position: relative;
-    background-color: #b4b4b4;
+    background-color: #816fdbd5;
     transition: all 0.6s ease-in-out;
     transform: translateY(100px);
     opacity: 0;
@@ -54,18 +54,18 @@ nav .nav-right button i {
     font-size: 18px;
 }
 
-.profile-menu .sign-in-btn {
+/* .profile-menu .sign-in-btn {
     display: none;
-}
+} */
 
 .profile-menu .sign-in-btn button {
-    background-color: #0000FF;
+    background-color: rgba(0, 0, 255, 0.671);
     color: white;
 }
 
-/* .profile-history {
+.profile-history {
     display: none;
-} */
+}
 
 .profile-history .history-content {
     height: 220px;

@@ -247,9 +247,9 @@ const compressedImage2 = () => {
     const a = document.createElement("a");
 
     a.href = canvas.toDataURL("image/jpeg");
-    
+
     a.download = `Resized Image.jpg`;
-    
+
     a.click();
 
     inputBox.value = "";
@@ -263,3 +263,10 @@ const compressedImage2 = () => {
 
 // For image upload 
 
+// For Sign-form
+
+const signInBtn = document.querySelector(".sign-in-btn");
+
+signInBtn.addEventListener("click", () => window.location.href = "screen/loginPage.html");
+
+// For Sign-form

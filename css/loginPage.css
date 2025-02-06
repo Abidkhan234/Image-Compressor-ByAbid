@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Login-form start */
+
+.login-form{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    background-color: #816fdbd5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #816fdb;
+}
+
+.login-form-heading h2{
+    letter-spacing: 2px;
+}
+
+.input-container .input-group input{
+    outline: none;
+    border: 2px solid #3f366d;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.input-container .input-group:nth-child(2) .show-btn{
+    top: 52%;
+    right: 1%;
+    transform: translate(-1%,-52%);
+    cursor: pointer;
+    padding: 5px;
+}
+.input-container .forget-password a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Login-form end */
