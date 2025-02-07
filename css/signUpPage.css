@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Login-form start */
+
+.signUp-form{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    background-color: #816fdbd5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #816fdb;
+}
+
+.signUp-form-heading h2{
+    letter-spacing: 2px;
+}
+
+.input-container .input-group input{
+    outline: none;
+    border: 2px solid #3f366d;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.input-container .input-group:nth-child(3) .showHideBtn{
+    top: 50%;
+    right: 1%;
+    cursor: pointer;
+    padding: 5px;
+}
+.input-container .forget-password a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.have-account-line p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.signUp-btn button{
+    border: 2px solid #463b80;
+    background-color: #463b80;
+    transition: all 0.4s;
+    color: white;
+}
+
+.signUp-btn button:hover{
+    background-color: transparent;
+    box-shadow: 0 0 20px #463b80;
+}
+
+.showHideBtn i{
+    color: white;
+}
+
+/* Login-form end */

@@ -32,10 +32,9 @@
     color: white;
 }
 
-.input-container .input-group:nth-child(2) .show-btn{
-    top: 52%;
+.input-container .input-group:nth-child(2) .showHideBtn{
+    top: 36%;
     right: 1%;
-    transform: translate(-1%,-52%);
     cursor: pointer;
     padding: 5px;
 }
@@ -44,6 +43,28 @@
     color: blue;
     font-weight: 500;
     font-size: 14px;
+}
+
+.create-account-line p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.login-btn button{
+    border: 2px solid #463b80;
+    background-color: #463b80;
+    transition: all 0.4s;
+    color: white;
+}
+
+.login-btn button:hover{
+    background-color: transparent;
+    box-shadow: 0 0 20px #463b80;
+}
+
+.showHideBtn i{
+    color: white;
 }
 
 /* Login-form end */
