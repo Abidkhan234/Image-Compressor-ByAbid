@@ -8,6 +8,7 @@ const profileOpenBtn = document.querySelector("#profileShowBtn");
 
 profileOpenBtn.addEventListener("click", () => {
     profileMenu.classList.add("profile-menu-show");
+    showingHistory();
 })
 
 profileCloseBtn.addEventListener("click", () => {
@@ -71,11 +72,6 @@ inputBox.addEventListener("change", (e) => {
         // Show preview
         previewImage.src = url;
 
-        // Cleanup URL after image loads
-        previewImage.onload = () => {
-            URL.revokeObjectURL(url);
-        };
-
         levelCompressorDiv.classList.add("level-compressor-show");
         document.querySelector(".content-2").classList.add("active");
 
@@ -111,10 +107,10 @@ const compressedImage = () => {
             imageQuality = 0.2;
             break;
         case originalSize > 1: // 1-2MB
-            imageQuality = 0.3;
+            imageQuality = 0.2;
             break;
         default: // < 1MB
-            imageQuality = 0.7;
+            imageQuality = 0.6;
     }
 
     a.href = canvas.toDataURL("image/jpeg", imageQuality);
@@ -267,6 +263,45 @@ const compressedImage2 = () => {
 
 const signInBtn = document.querySelector(".sign-in-btn");
 
+const signInBtnDiv = document.querySelector(".sign-in-btn-div");
+
+const profileHistory = document.querySelector(".profile-history");
+
+window.addEventListener("load", () => {
+    if (localStorage.getItem("isLoggedIn")) {
+        profileHistory.style.display = "block";
+        signInBtnDiv.style.display = "none";
+    }
+})
+
 signInBtn.addEventListener("click", () => window.location.href = "screen/loginPage.html");
 
 // For Sign-form
+
+// For showing history 
+
+const historyContent = document.querySelector(".history-content");
+
+const showingHistory = () => {
+
+    let storageData = JSON.parse(sessionStorage.getItem("imgData")) || [];
+
+    historyContent.innerHTML = "";
+
+    storageData.forEach(element => {
+
+        let correctSrc = element.imgData.replace("blob:", "");
+
+        const historyItem = document.createElement("div");
+        historyItem.classList.add("history-item");
+
+        historyItem.innerHTML = `
+        <img src="${correctSrc}" alt="">
+                    <div class="delete-item"><i class="fas fa-trash-can"></i></div>
+        `
+        historyContent.appendChild(historyItem);
+    });
+
+}
+
+// For showing history 

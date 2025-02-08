@@ -59,8 +59,15 @@ nav .nav-right button i {
 } */
 
 .profile-menu .sign-in-btn button {
-    background-color: rgba(0, 0, 255, 0.671);
+    background-color: white;
+    color: #927dfc;
+    transition: all 0.4s;
+}
+
+.profile-menu .sign-in-btn button:hover{
+    background-color: #493e83;
     color: white;
+    transform: scale(1.1);
 }
 
 .profile-history {
@@ -246,6 +253,11 @@ section button:hover::after,
     z-index: 3;
 }
 
-
+.input-group input{
+    border: 1.5px solid black;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+}
 
 /* Main Section end*/

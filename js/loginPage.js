@@ -53,12 +53,14 @@ loginBtn.addEventListener("click", () => {
 
         if (errorEle[0].innerHTML == "" && errorEle[1].innerHTML == "") {
             alert("Loged In Successfully");
+            localStorage.setItem("isLoggedIn", true)
             window.location.href = "../index.html";
             emailInput.value = "";
             passwordInput.value = "";
             userNameInput.value = "";
         }
     } else {
+        localStorage.setItem("isLoggedIn", false);
         alert("Create Account First");
     }
 

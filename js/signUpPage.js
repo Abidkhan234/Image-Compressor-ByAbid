@@ -69,6 +69,7 @@ signUpBtn.addEventListener("click", () => {
             emailInput.value = "";
             passwordInput.value = "";
             userNameInput.value = "";
+            window.location.href= "loginPage.html";
         }
     }
 

@@ -50,13 +50,13 @@
         <div class="close-btn position-absolute top-0 end-0">
             <i class="fas fa-x"></i>
         </div>
-        <div class="sign-in-btn position-absolute top-50 start-50 translate-middle">
+        <div class="sign-in-btn-div position-absolute top-50 start-50 translate-middle">
             <button class="rounded-3 py-2 px-4 fw-medium border-0 sign-in-btn">Sign In</button>
         </div>
 
         <div class="profile-history p-2 overflow-hidden">
-            <div class="history-heading text-center mt-2">
-                <h4 class="fw-bold">History</h4>
+            <div class="history-heading text-center mt-3">
+                <h4 class="fw-bold text-white">History</h4>
             </div>
             <div class="history-content d-flex flex-column gap-3 w-100">
                 <!-- <div class="history-item d-flex justify-content-between align-items-center">
@@ -127,7 +127,8 @@
             <h3 class="m-0 text-uppercase fw-bold">Image Resizer</h3>
         </div>
         <div class="image-compressor image-compressor-2">
-            <div class="image-compressor-content image-compressor-content-2 text-center d-flex flex-column gap-2 align-items-center">
+            <div
+                class="image-compressor-content image-compressor-content-2 text-center d-flex flex-column gap-2 align-items-center">
                 <input type="file" id="input-box-2" accept="image/*" hidden>
 
                 <div
@@ -140,22 +141,22 @@
         </div>
 
         <div class="level-compressor level-compressor-2 d-flex flex-column gap-3">
-            <div class="input-content">
+            <div class="input-content d-flex justify-content-between gap-3">
 
-                <div class="input-group">
-                    <label for="widthEle">Width</label>
-                    <input type="number" id="widthEle">
+                <div class="input-group d-flex ms-2">
+                    <label for="widthEle" class="fw-medium fs-5">Width:</label>
+                    <input type="number" id="widthEle" class="py-1 px-1 rounded-1 w-100">
                 </div>
-                
-                <div class="input-group">
-                    <label for="heightEle">Height</label>
-                    <input type="number" id="heightEle">
+
+                <div class="input-group d-flex">
+                    <label for="heightEle" class="fw-medium fs-5">Height:</label>
+                    <input type="number" id="heightEle" class="py-1 px-1 rounded-1 w-100">
                 </div>
 
             </div>
             <div class="checkBox">
                 <input type="checkbox" id="checkedEle" checked>
-                <label for="checkedEle">Locked Aspect Ratio</label>
+                <label for="checkedEle" class="fw-medium fs-6">Locked Aspect Ratio</label>
             </div>
             <button class="px-3 py-2 rounded-3" id="dowload-image-2">Download Image</button>
         </div>
